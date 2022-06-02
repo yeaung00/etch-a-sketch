@@ -1,0 +1,18 @@
+body,
+html {
+    margin:0;
+}
+.container {
+    width:fit-content;
+    height:fit-content;
+}
+.rowContainer {
+    display:flex;
+    width:fit-content;
+    height:fit-content;
+}
+.column {
+    width:2em;
+    height:2em;
+    border: 1px solid black;
+}
