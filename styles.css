@@ -1,23 +1,26 @@
 body{
     margin:0;
 }
+.app {
+    display:flex;
+}
+.tools {
+    width: 25em;
+}
 .container {
-    
-    width:100%;
-    height:100%;
-    border: 1px solid orange;
+    display:flex;
+    flex-direction: column;
+    height:30em;
+    width:30em;
+    border: 1px solid blue;
 }
 .rowContainer {
-    margin-left:auto;
-    margin-right:auto;
+    flex:1;
     display:flex;
-    width:fit-content;
-    height:fit-content;
     border:1px solid orange;
 }
 .cells {
-    width:2em;
-    height:2em;
+    flex:1;
     border: 1px solid black;
 }
 .cells:hover {
