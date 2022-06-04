@@ -4,6 +4,7 @@ const eraserBtn = document.querySelector(".eraser");
 const clearBtn = document.querySelector(".clear");
 const colorPickerBtn = document.querySelector(".colorPicker");
 const markerBtn = document.querySelector(".marker");
+let showGridSize = document.querySelector(".showGridSize");
 let cells;
 let rowContainer;
 let column = 16;
@@ -14,7 +15,6 @@ let isDrawing = false;
 
 
 function createGrid(row,column) {
-    
     for(let i = 0; i <row; i++) {
         rowContainer = document.createElement("div");
         rowContainer.setAttribute("class", "rowContainer");
@@ -27,6 +27,7 @@ function createGrid(row,column) {
             rowContainer.appendChild(cells);
         }
     }
+    showGridSize.textContent = row + "x" + column;
 }
 
 function isDown(e) {
