@@ -15,7 +15,6 @@ body{
     justify-content: center;
     width:100vw;
     height:100vh;
-    border:1px solid black;
     gap:2%;
 }
 .tools {
@@ -40,6 +39,10 @@ body{
 .gridDimensions:hover,
 .colorPicker:hover {
     transform: scale(1.08);
+}
+.selected {
+    background-color: rgb(65, 65, 65);
+    color: white;
 }
 .container {
     display:flex;
