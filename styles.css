@@ -8,12 +8,14 @@ body{
     display:flex;
     justify-content: center;
 }
+/* ==========
+Layout
+ ============ */
 .app {
     padding-top: 4%;
     display:flex;
     justify-content: center;
     width:100vw;
-    height:55vh;
     gap:2%;
 }
 .tools {
@@ -22,23 +24,13 @@ body{
     flex-direction: column;
     gap:4%;
 }
-.marker,
-.eraser,
-.clear,
-.gridDimensions,
-.colorPicker,
-.rainbow {
+.btn {
     font-size: 100%;
     height: 5vh;
     border-radius: 4px;
     transition-duration: 0.2s;
 }
-.marker:hover,
-.eraser:hover,
-.clear:hover,
-.gridDimensions:hover,
-.colorPicker:hover,
-.rainbow:hover {
+.btn:hover {
     transform: scale(1.08);
 }
 .selected {
@@ -68,5 +60,27 @@ body{
 
 .showGridSize {
     text-align: center;
-    font-size: 4vw;
+    font-size: 4rem;
 }
+
+/* ==========
+Media queries
+ ============ */
+ @media(max-width:680px) {
+    .app {
+        padding-top: 4%;
+        display:flex;
+        flex-direction: column-reverse;
+        width:100vw;
+        gap:2%;
+    }
+    .tools {
+        margin: 0 auto;
+    }
+    .btn {
+        width: 10em;
+        margin-bottom: 1.5em;
+        height:2.5em;
+        padding: .5em 0;
+    }
+ }
